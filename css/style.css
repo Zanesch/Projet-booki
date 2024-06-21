@@ -37,11 +37,14 @@
     display: flex;
     align-items: center;
     border: none;
-    background-color: #ccc;
+    background-color: #F2F2F2;
     border-radius: 10px 0 0 10px;
 }
 
 .icon-size {
+    padding: 12px;
+}
+.loupe-size{
     padding: 12px;
 }
 
@@ -167,7 +170,6 @@ a {
     width: 30%;
 }
 .hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
@@ -204,6 +206,7 @@ gap: 30px;
 }
 
 .hebergements {
+    background-color: var(--main-bg-color);
     width: 65%;
 }
 
@@ -219,6 +222,8 @@ gap: 30px;
 
 /****** Populaires ***********/
 .populaires {
+    background-color: var(--main-bg-color);
+
     width: 32%;
 }
 
@@ -262,11 +267,36 @@ gap: 30px;
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
-.activites-title{
-    margin-top: 100px;
-    font-size: 22px;
-    margin-left: 25px;
+
+/*Activités */
+.activites{
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
+.activites-title{
+    font-size: 22px;
+    
+}
+.blocactivites{
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    gap: 2%;
+}
+.caseactivites{
+    width: -webkit-fill-available;
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+.caseactivites img{
+    width: 100%;
+    height: 90%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
 .cards-activites{
     background-color: white;
     border-radius: 20px;
@@ -283,7 +313,7 @@ gap: 30px;
 .activites-text{
     margin-left: 20px;
 }
-
+/*Navigation*/
 .box-container{
     display: flex;
     flex-direction: row;
@@ -292,6 +322,17 @@ gap: 30px;
     font-size: 22px;
 
 }
+.eco-famille{
+    display: flex;
+    flex-direction: row;
+}
+.romantique-pepite{
+    display: flex;
+    flex-direction: row;
+
+}
+
+
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -306,9 +347,7 @@ gap: 30px;
     .box-container{
         flex-direction: row;
     }
-    .box{
-        margin: 0;
-    }
+    /* Hébergement et Populaires */
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -339,31 +378,28 @@ gap: 30px;
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
-    .loisir-container{
-        display: flex;
-        gap: 15px;
-        justify-content: space-between;
-    }
-    .loisir-container a {
-        width: 20%;
-height: 100%;
+    /*Activités*/
+    
+.blocactivites{
+    height: 250px;
+}
+.caseactivites{
+    width: -webkit-fill-available;
+}
+.caseactivites img{
+    height: 70%;
 
+}
 
     }
     .footer-container{
         margin-right: 0%;
         padding-right: 10%;
     }
-
-    /*mettre des balise ahref pr faire diminuer la tailles pr les médias queries*/
-    .cards-activites{
-        
+    .loupe{
+display: none;
     }
-    .cards-activites img{
-
-    }
-}
-
+    
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
@@ -377,14 +413,58 @@ height: 100%;
         margin: 5% 0 5% 50%;
 
     }
+    .box{
+        display: flex;
+        width: 100%;
+        gap: 10px;
+
+    }
     .section-title{
         
     }
-    .box-container{
+    /* Navigation mobile*/
+    .filtres-container{
+    justify-content: space-around;
+    align-items: stretch;
 
+    }
+    .search-container{
+        justify-content: center;
+    }
+    .search-button{
+        width: auto;
+        padding: 10px;
+
+    }
+    .search-button strong {
+        display: none;
+    }
+    .eco-famille{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+    .romantique-pepite{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+    .box-container{
+        display: flex;
+        flex-direction: column;
+
+    }
+    /*hebergements et populaires*/
+    .hebergements-and-populaires section{
+        
     }
     .hebergements-and-populaires{
         flex-direction: column-reverse;
+    }
+    .populaires{
+        background-color: #F2F2F2;
     }
     .populaires-cards{
         flex-direction: column;   
@@ -394,7 +474,7 @@ height: 100%;
 }
 
 .hebergements{
-    background-color: #0065FC;
+    background-color: white;
 }
 .hebergements-cards{
     flex-direction: column;
@@ -403,4 +483,35 @@ height: 100%;
 .hebergements-cards a{
     width: auto;
 }
+/*Activités*/
+.activités{
+    height: 1150px;
 }
+.blocactivites{
+    flex-direction: column;
+
+}
+.caseactivites{
+    margin-bottom: 20px;
+
+}
+.caseactivites img{
+    height: 200px;
+    width: 100%;
+
+}
+/*footer*/
+
+.footer-container {
+flex-direction: column;
+}
+.loupe{
+    display: block;
+}
+
+}
+
+/*footer*/
+
+
+/* cacher le boutton recherche et rajouter une div pr créer espace pr le logo loupe sur la recherche dans l'onglet navigation,ajouter une div border raidus élevé pr faire le cercle autour de l'icone d'information changer la couleur de gris dans la partie nav et autre*/

@@ -37,17 +37,24 @@
             <div class="search-container">
                 <div class="location-container">
                     <div class="icon-size"> <i class="fa-sharp fa-solid fa-location-dot fa-flip-horizontal" style="color: #000000;"></i> </div>
-
                     <form method="get" action="">
                         <input class="search-bar" placeholder="Marseille, France" id="site-search" name="s">
+                        
                 </div>
-                <button class="search-button"> <strong>Rechercher</strong></button>
+                <button class="search-button"> <strong>Rechercher</strong>
+                    <div class="loupe">
+                        <i class="fa-solid fa-magnifying-glass" style="color: white;"></i>
+                    </div>
+                 </button>
 
                 </form>
+               
             </div>
+            <h2 class="nav-title"> Filtres </h2>
             <div class="filtres-container">
-                <h2 class="nav-title"> Filtres </h2>
+                
                 <div class="box-container">
+                    <div class="eco-famille">
                 <div class="box">
                     <i class="fa-solid fa-money-bill-wave"></i>
                     <strong> Économique</strong>
@@ -56,6 +63,8 @@
                     <i class="fa-solid fa-person"></i>
                     <strong>Familial</strong>
                 </div>
+            </div>
+            <div class="romantique-pepite">
                 <div class="box">
                     <i class="fa-solid fa-heart"></i>
                     <strong>Romantique</strong>
@@ -64,6 +73,7 @@
                     <i class="fa-solid fa-fire"></i>
                     <strong> Nos pépites</strong>
                 </div>
+                </div>
             </div>
             </div>
             <div class="circle-info-container">
@@ -71,8 +81,6 @@
                 <i class="fa-solid fa-circle-info" style="color: #000000;"></i> <span>Plus de 500 logements sont disponibles dans cette
                     ville</span>
                 </div>
-            </div>
-            
             </form>
         </nav>
         <main>
@@ -280,34 +288,22 @@
                     </div>
                 </div>
                 </section>
-                <section>
+                <section class="activités">
                     <h2 class="activites-title" id="Activités à Marseille">Activités à Marseille</h2>
-                    <div class="loisir-container">
-                        <a href="#">
-                    <article class="cards-activites">
-                        <img src="./images/activites/reno-laithienne.jpg" alt="image du vieux port">
-                        <h4 class="activites-text">Vieux-Port</h4>
-                    </article>
-                        </a>
-                        <a href="#">
-                        <article class="cards-activites">
-                            <img src="./images/activites/paul-hermann.jpg" alt="image du fort">
-                            <h4 class="activites-text" >Fort de pomègues</h4>
-                        </article>
-                    </a>
-                    <a href="#">
-                        <article class="cards-activites">
-                            <img src="./images/activites/kilyan-sockalingum.jpg" alt="image du parc national des calanques">
-                            <h4 class="activites-text" >Parc national des calanques</h4>
-                        </article>
-                    </a>
-                <a href="#">
-                        <article class="cards-activites">
-                            <img src="./images/activites/florian-wehde.jpg" alt="image de Notre-Dame de-la-Garde">
-                            <h4 class="activites-text" >Notre-Dame de la Garde</h4>
-                        </article>
-                    </a>
+                    <div class="blocactivites">
+                        <div class="caseactivites"><img src="./images/activites/reno-laithienne.jpg"alt="image du   vieux port">
+                           <div class="activites-text"><h4>Vieux-Port</h4></div>
                         </div>
+                                <div class="caseactivites"><img src="./images/activites/paul-hermann.jpg"alt="image du Fort">
+                                   <div class="activites-text"><h4>Fort de pomègues</h4></div>
+                    </div>
+                        <div class="caseactivites"><img src="./images/activites/kilyan-sockalingum.jpg"alt="image des Calanques">
+                           <div class="activites-text"><h4 >Parc National des Calanques</h4></div>
+            </div>
+                <div class="caseactivites"><img src="./images/activites/florian-wehde.jpg"alt="image de notre dame de la garde">
+                   <div class="activites-text"><h4 >Notre-dame-de-la-garde</h4></div>
+                
+    </div>
                 </section>
         </main>
         <footer>
