@@ -19,6 +19,14 @@
     display: flex;
     gap: 100px;
 }
+.loupe-container .icon {
+    color: white;
+    display: none; 
+    padding: 5px; 
+}
+.boutton-texte{
+  color: white;
+}
 
 .lien-Hébergement :hover {
     border-top: 2px solid;
@@ -32,19 +40,36 @@
     padding-top: 3px;
     color: #0065FC;
 }
-
+/*mettre une valeur fixe sur la recherchecontainer mettre une div qui regroupe les filtres pr les mettres en row mettre des articles sur les activités a Marseille*/
 .location-container {
     display: flex;
     align-items: center;
     border: none;
     background-color: #F2F2F2;
     border-radius: 10px 0 0 10px;
+    width: 15%;
+}
+.location-container .icon{
+
+    padding-right: 15px;
+}
+.circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 50%;
+    background-color: white;
+    color: #f2f2f2;
 }
 
 .icon-size {
     padding: 12px;
 }
-.loupe-size{
+
+.loupe-size {
     padding: 12px;
 }
 
@@ -82,13 +107,15 @@
 .box:hover {
     background-color: #DEEBFF;
 }
-.circle-info-container{
+
+.circle-info-container {
     margin: 40px 0;
 
 }
+
 .circle-info {
     margin: 15px;
-    
+
 }
 
 .box {
@@ -132,6 +159,39 @@ a {
     color: inherit;
     text-decoration: none;
 }
+.recherche-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    width: 350px;
+    height: 45px;
+}
+.recherche-text{
+    background-color: white;
+    width: 60%;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.loupe-container{
+    padding: 13px;
+    background-color: #0065FC;
+    width: 30%;
+    border-radius: 0px 10px 10px 0px;
+    filter: drop-shadow(0px 5px 1px rgba(0, 0, 0, 0.1));
+}
+.location-container{
+}
+
+.icon {
+    color: #000;
+}
+.text {
+    font-weight: bold;
+    color: black;
+}
 
 .section-title {
     margin: 0;
@@ -150,7 +210,7 @@ a {
 }
 
 .card-title {
-    font-size: 16px;
+    font-size: 1.2vw;
 }
 
 .euro {
@@ -166,9 +226,11 @@ a {
     display: flex;
     justify-content: space-between;
 }
-.hebergements-cards-container{
+
+.hebergements-cards-container {
     width: 30%;
 }
+
 .hebergements-and-populaires section {
     border-radius: 20px;
     padding: 30px;
@@ -188,7 +250,7 @@ a {
     flex-wrap: wrap;
     display: flex;
     margin-top: 33px;
-gap: 30px;
+justify-content: space-between;
 }
 
 .hebergements-cards .card-content {
@@ -198,6 +260,7 @@ gap: 30px;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+    white-space: nowrap;
 }
 
 .hebergements-cards .card-subtitle {
@@ -210,10 +273,10 @@ gap: 30px;
     width: 65%;
 }
 
-.footer-container{
+.footer-container {
     display: flex;
     justify-content: space-between;
-    background-color: #ccc;
+    background-color: #F2F2F2;
     margin-top: 100px;
     padding-left: 30px;
     padding-right: 300px;
@@ -269,39 +332,44 @@ gap: 30px;
 }
 
 /*Activités */
-.activites{
+.activites {
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.activites-title{
+
+.activites-title {
     font-size: 22px;
-    
+
 }
-.blocactivites{
+
+.blocactivites {
     display: flex;
     flex-direction: row;
-    height: 600px;
+    height: 450px;
     gap: 2%;
 }
-.caseactivites{
+
+.caseactivites {
     width: -webkit-fill-available;
     background-color: white;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
-.caseactivites img{
+
+.caseactivites img {
     width: 100%;
-    height: 90%;
+    height: 85%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 
 }
 
-.cards-activites{
+.cards-activites {
     background-color: white;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
+
 /*
 .cards-activites img{
     border-radius: 20px;
@@ -310,23 +378,27 @@ gap: 30px;
     display: flex;
 }
 */
-.activites-text{
+.activites-text {
     margin-left: 20px;
 }
+
 /*Navigation*/
-.box-container{
+.box-container {
     display: flex;
     flex-direction: row;
 }
-.nav-title{
+
+.filtre-title {
     font-size: 22px;
 
 }
-.eco-famille{
+
+.eco-famille {
     display: flex;
     flex-direction: row;
 }
-.romantique-pepite{
+
+.romantique-pepite {
     display: flex;
     flex-direction: row;
 
@@ -341,12 +413,14 @@ gap: 30px;
 @media (max-width: 1024px) {
 
 
-    .filtres-container{
+    .filtres-container {
         flex-direction: column;
     }
-    .box-container{
+
+    .box-container {
         flex-direction: row;
     }
+
     /* Hébergement et Populaires */
     .hebergements-and-populaires {
         flex-direction: column;
@@ -378,140 +452,217 @@ gap: 30px;
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
     /*Activités*/
-    
-.blocactivites{
-    height: 250px;
-}
-.caseactivites{
-    width: -webkit-fill-available;
-}
-.caseactivites img{
-    height: 70%;
+
+    .blocactivites {
+        height: 250px;
+        width: 105%;
+    }
+
+    .caseactivites {
+        width: -webkit-fill-available;
+    }
+
+    .caseactivites img {
+        height: 70%;
+
+    }
 
 }
 
-    }
-    .footer-container{
-        margin-right: 0%;
-        padding-right: 10%;
-    }
-    .loupe{
-display: none;
-    }
-    
+.footer-container {
+    margin-right: 0%;
+    padding-right: 10%;
+}
+
+.loupe {
+    display: none;
+}
+
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (min-width: 320px) and (max-width: 768px) {
+
     /* ... */
-    .header-container{
+    .nav-mobile {
+        width: 100%;  
+    box-sizing: border-box;
+    }
+    .header-container {
 
         flex-direction: column;
         align-items: center;
     }
-    .logo{
+    .liens{
+        gap: 0%;
+    }
+    
+    .liens :hover{
+        border-bottom: 1px solid;
+        color: #0065FC;
+
+    }
+        
+    
+    
+    .lien-Hébergement :hover,
+    .lien-activites :hover {
+    border-top: none;
+}
+
+    .logo {
         width: 60%;
         margin: 5% 0 5% 50%;
 
     }
-    .box{
+
+    .box {
         display: flex;
         width: 100%;
         gap: 10px;
 
     }
-    .section-title{
-        
-    }
+
+    .section-title {}
+
     /* Navigation mobile*/
-    .filtres-container{
-    justify-content: space-around;
-    align-items: stretch;
+    .filtres-container {
+        justify-content: space-around;
+        align-items: stretch;
 
     }
-    .search-container{
+    .liens {
+        display: flex;
+        align-items: center;
+    }
+    
+    .lien-Hébergement,
+    .lien-activites {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .lien-Hébergement:hover,
+    .lien-activites:hover {
+        width: 100%;
+    }
+    .location-container{
+        width: 100%;
+    }
+
+    .search-container {
         justify-content: center;
     }
-    .search-button{
+
+    .search-button {
         width: auto;
         padding: 10px;
 
     }
+
     .search-button strong {
         display: none;
     }
-    .eco-famille{
+
+    .eco-famille {
         margin-top: 20px;
         display: flex;
         justify-content: space-evenly;
 
     }
-    .romantique-pepite{
+
+    .romantique-pepite {
         margin-top: 20px;
         display: flex;
         justify-content: space-evenly;
 
     }
-    .box-container{
+
+    .box-container {
         display: flex;
         flex-direction: column;
 
     }
+
     /*hebergements et populaires*/
-    .hebergements-and-populaires section{
-        
-    }
-    .hebergements-and-populaires{
+    .hebergements-and-populaires section {}
+
+    .hebergements-and-populaires {
         flex-direction: column-reverse;
     }
-    .populaires{
+
+    .populaires {
         background-color: #F2F2F2;
     }
-    .populaires-cards{
-        flex-direction: column;   
-}
-.populaires-cards a{
-    width: auto;
+
+    .populaires-cards {
+        flex-direction: column;
+    }
+
+    .populaires-cards a {
+        width: auto;
+    }
+
+    .hebergements {
+        background-color: white;
+    }
+    .card{
+        margin-top: 30px;
+    }
+    .card-title{
+        font-size: 16px;
+    }
+
+    .hebergements-cards {
+        flex-direction: column;
+    }
+
+    .hebergements-cards a {
+        width: auto;
+    }
+
+    /*Activités*/
+    .activités {
+        height: 2000px;
+    }
+
+    .blocactivites {
+        flex-direction: column;
+        width: auto;
+
+    }
+
+    .caseactivites {
+        margin-bottom: 20px;
+
+    }
+
+    .caseactivites img {
+        height: auto;
+        width: 100%;
+
+    }
+
+    /*footer*/
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .loupe {
+        display: block;
+    }
+
 }
 
-.hebergements{
-    background-color: white;
-}
-.hebergements-cards{
-    flex-direction: column;
-}
-
-.hebergements-cards a{
-    width: auto;
-}
-/*Activités*/
-.activités{
-    height: 1150px;
-}
-.blocactivites{
-    flex-direction: column;
-
-}
-.caseactivites{
-    margin-bottom: 20px;
-
-}
-.caseactivites img{
-    height: 200px;
-    width: 100%;
-
-}
 /*footer*/
 
-.footer-container {
-flex-direction: column;
-}
-.loupe{
-    display: block;
-}
 
-}
-
-/*footer*/
-
-
-/* cacher le boutton recherche et rajouter une div pr créer espace pr le logo loupe sur la recherche dans l'onglet navigation,ajouter une div border raidus élevé pr faire le cercle autour de l'icone d'information changer la couleur de gris dans la partie nav et autre*/
+/* afficher le mobile a partir de 320px
+ les images ne doivent pas etre déformée
+ le menu version mobile a corrigé(bordure en bas hover)
+ icone information a changer
+ élargir les images en version tablette pr les activités a Marseille
+ validation W3c pr le html changer les balises nav
+ 
+ 
