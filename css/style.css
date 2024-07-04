@@ -10,9 +10,8 @@
 }
 
 .header-container img {
-    width: 20%;
-    height: auto;
-    margin-right: 40px;
+    width: 30%;
+    margin-top: 30px;
 }
 
 .liens {
@@ -180,7 +179,6 @@ a {
     background-color: #0065FC;
     width: 30%;
     border-radius: 0px 10px 10px 0px;
-    filter: drop-shadow(0px 5px 1px rgba(0, 0, 0, 0.1));
 }
 .location-container{
 }
@@ -244,6 +242,7 @@ a {
     border-radius: 20px;
 
 }
+
 
 .hebergements-cards {
     flex-direction: row;
@@ -429,7 +428,9 @@ justify-content: space-between;
     .hebergements {
         width: 100%;
     }
-
+    .card-title{
+        font-size: 2vw;
+    }
     .populaires {
         width: 100%;
         margin-top: 50px;
@@ -456,16 +457,13 @@ justify-content: space-between;
     /*Activités*/
 
     .blocactivites {
-        height: 250px;
-        width: 105%;
-    }
-
-    .caseactivites {
-        width: -webkit-fill-available;
+        height: 350px;
+        width: auto;
+        margin: 0 20px;
     }
 
     .caseactivites img {
-        height: 70%;
+        height: 80%;
 
     }
 
@@ -484,6 +482,9 @@ justify-content: space-between;
 @media (min-width: 320px) and (max-width: 768px) {
 
     /* ... */
+    .main-container{
+        padding: 0%;
+    }
     .nav-mobile {
         width: 100%;  
     box-sizing: border-box;
@@ -493,12 +494,10 @@ justify-content: space-between;
         flex-direction: column;
         align-items: center;
     }
-    .liens{
-        gap: 0%;
-    }
+    
     
     .liens :hover{
-        border-bottom: 1px solid;
+        border-bottom: 3px solid;
         color: #0065FC;
 
     }
@@ -518,12 +517,18 @@ justify-content: space-between;
 
     .box {
         display: flex;
-        width: 100%;
+        width: 30%;
         gap: 10px;
+        font-size: 2vw;
 
     }
 
-    .section-title {}
+    .section-title {
+        margin-left:30px; 
+    }
+    .text-header{
+        margin-left: 30px;
+    }
 
     /* Navigation mobile*/
     .filtres-container {
@@ -531,23 +536,72 @@ justify-content: space-between;
         align-items: stretch;
 
     }
+    .filtre-title{
+        margin-left: 30px;
+    }
     .liens {
         display: flex;
         align-items: center;
+        gap: 0%;
     }
     
     .lien-Hébergement,
     .lien-activites {
         width: 100%;
         text-align: center;
+        border-bottom: 3px solid;
+        border-color: #F2F2F2;
     }
     
     .lien-Hébergement:hover,
     .lien-activites:hover {
         width: 100%;
     }
+    .recherche-container{
+        display: flex;
+    align-items: center;
+    border-radius: 12px;
+    border: 2px solid;
+    border-color: #F2f2f2;
+    border-right-color: white;
+    height: 45px;
+    margin: 20px;
+    width: 80%;
+    }
+     
     .location-container{
+        width: 13%;
+        height: 100%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+
+    }
+    .recherche-bloc{
+        display: flex;
+        justify-content: center;
         width: 100%;
+    }
+    .recherche-text{
+        width: 80%;
+
+    }
+    .loupe-container{
+    display: flex;
+    height: 105%;
+    background-color: #0065FC;
+    width: 13%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 5px 1px rgba(0, 0, 0, 0.1));
+    padding: 0;
+
+    }
+    .loupe-container .icon{
+        display: block;
+    }
+    .boutton-texte{
+        display: none;
     }
 
     .search-container {
@@ -565,27 +619,34 @@ justify-content: space-between;
     }
 
     .eco-famille {
+        width: 80%;
         margin-top: 20px;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
 
     }
 
     .romantique-pepite {
         margin-top: 20px;
         display: flex;
-        justify-content: space-evenly;
+        width: 80%;
+        justify-content: space-between;
 
     }
 
     .box-container {
         display: flex;
         flex-direction: column;
+        width: 100%;
+        align-items: center;
 
     }
+    
 
     /*hebergements et populaires*/
-    .hebergements-and-populaires section {}
+    .hebergements-and-populaires section {
+        border-radius: 0%;
+    }
 
     .hebergements-and-populaires {
         flex-direction: column-reverse;
@@ -623,7 +684,10 @@ justify-content: space-between;
 
     /*Activités*/
     .activités {
-        height: 2000px;
+        height: 1200px;
+    }
+    .activites-title{
+        margin-left: 30px;
     }
 
     .blocactivites {
@@ -633,12 +697,13 @@ justify-content: space-between;
     }
 
     .caseactivites {
+        height: 80%;
         margin-bottom: 20px;
 
     }
 
     .caseactivites img {
-        height: auto;
+        height: 75%;
         width: 100%;
 
     }
