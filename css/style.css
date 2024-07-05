@@ -39,7 +39,7 @@
     padding-top: 3px;
     color: #0065FC;
 }
-/*mettre une valeur fixe sur la recherchecontainer mettre une div qui regroupe les filtres pr les mettres en row mettre des articles sur les activités a Marseille*/
+
 .location-container {
     display: flex;
     align-items: center;
@@ -208,7 +208,7 @@ a {
 }
 
 .card-title {
-    font-size: 1.2vw;
+    font-size: 1.1vw;
 }
 
 .euro {
@@ -369,14 +369,7 @@ justify-content: space-between;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-/*
-.cards-activites img{
-    border-radius: 20px;
-    width:250px;
-    height: 350px;
-    display: flex;
-}
-*/
+
 .activites-text {
     margin-left: 20px;
 }
@@ -720,14 +713,4 @@ justify-content: space-between;
 
 }
 
-/*footer*/
-
-
-/* afficher le mobile a partir de 320px
- les images ne doivent pas etre déformée
- le menu version mobile a corrigé(bordure en bas hover)
- icone information a changer
- élargir les images en version tablette pr les activités a Marseille
- validation W3c pr le html changer les balises nav
- 
  
