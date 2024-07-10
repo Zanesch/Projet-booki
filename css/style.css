@@ -360,6 +360,7 @@ justify-content: space-between;
     height: 85%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit: cover;
 
 }
 
@@ -457,6 +458,7 @@ justify-content: space-between;
 
     .caseactivites img {
         height: 80%;
+        object-fit: cover;
 
     }
 
@@ -510,9 +512,10 @@ justify-content: space-between;
 
     .box {
         display: flex;
-        width: 30%;
+        width: 40%;
         gap: 10px;
-        font-size: 2vw;
+        font-size: 3vw;
+        align-items: center;
 
     }
 
@@ -698,6 +701,7 @@ justify-content: space-between;
     .caseactivites img {
         height: 75%;
         width: 100%;
+        object-fit: cover;
 
     }
 
