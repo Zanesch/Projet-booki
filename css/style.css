@@ -637,6 +637,9 @@ justify-content: space-between;
         align-items: center;
 
     }
+    .circle-info-container{
+        margin-left: 30px;
+    }
     
 
     /*hebergements et populaires*/
