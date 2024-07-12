@@ -2,7 +2,7 @@
 * {
     font-family: 'Raleway', sans-serif;
 }
-
+/*Header*/
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -18,15 +18,6 @@
     display: flex;
     gap: 100px;
 }
-.loupe-container .icon {
-    color: white;
-    display: none; 
-    padding: 5px; 
-}
-.boutton-texte{
-  color: white;
-}
-
 .lien-Hébergement :hover {
     border-top: 2px solid;
     padding-top: 3px;
@@ -39,7 +30,42 @@
     padding-top: 3px;
     color: #0065FC;
 }
+/*Barre de recherche*/
+.loupe-container .icon {
+    color: white;
+    display: none; 
+    padding: 5px; 
+}
+.boutton-texte{
+  color: white;
+}
+.recherche-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    width: 350px;
+    height: 45px;
+}
+.recherche-text{
+    background-color: white;
+    width: 60%;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.loupe-container{
+    padding: 13px;
+    background-color: #0065FC;
+    width: 30%;
+    border-radius: 0px 10px 10px 0px;
+}
 
+
+.icon {
+    color: #000;
+}
 .location-container {
     display: flex;
     align-items: center;
@@ -52,18 +78,6 @@
 
     padding-right: 15px;
 }
-.circle {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    border: 2px solid;
-    border-radius: 50%;
-    background-color: white;
-    color: #f2f2f2;
-}
-
 .icon-size {
     padding: 12px;
 }
@@ -95,8 +109,28 @@
     justify-content: flex-start;
     border: none;
 }
+/*Cercle d'info*/
+.circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 50%;
+    background-color: white;
+    color: #f2f2f2;
+}
+.circle-info-container {
+    margin: 40px 0;
 
+}
 
+.circle-info {
+    margin: 15px;
+
+}
+/*Filtres*/
 .filtres-container {
     display: flex;
     align-items: baseline;
@@ -107,15 +141,6 @@
     background-color: #DEEBFF;
 }
 
-.circle-info-container {
-    margin: 40px 0;
-
-}
-
-.circle-info {
-    margin: 15px;
-
-}
 
 .box {
     margin-left: 10px;
@@ -157,30 +182,6 @@ body {
 a {
     color: inherit;
     text-decoration: none;
-}
-.recherche-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #F2F2F2;
-    border-radius: 10px;
-    width: 350px;
-    height: 45px;
-}
-.recherche-text{
-    background-color: white;
-    width: 60%;
-    text-align: center;
-    padding-top: 12px;
-    padding-bottom: 12px;
-}
-.loupe-container{
-    padding: 13px;
-    background-color: #0065FC;
-    width: 30%;
-    border-radius: 0px 10px 10px 0px;
-}
-.location-container{
 }
 
 .icon {
@@ -562,7 +563,7 @@ justify-content: space-between;
     border-right-color: white;
     height: 45px;
     margin: 20px;
-    width: 80%;
+    width: 92%;
     }
      
     .location-container{
@@ -615,7 +616,7 @@ justify-content: space-between;
     }
 
     .eco-famille {
-        width: 80%;
+        width: 90%;
         margin-top: 20px;
         display: flex;
         justify-content: space-between;
@@ -625,7 +626,7 @@ justify-content: space-between;
     .romantique-pepite {
         margin-top: 20px;
         display: flex;
-        width: 80%;
+        width: 90%;
         justify-content: space-between;
 
     }
@@ -634,7 +635,7 @@ justify-content: space-between;
         display: flex;
         flex-direction: column;
         width: 100%;
-        align-items: center;
+        margin-left: 20px;
 
     }
     .circle-info-container{
